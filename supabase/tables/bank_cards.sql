@@ -1,0 +1,6 @@
+CREATE TABLE bank_cards (
+    id SERIAL PRIMARY KEY,
+    card_number VARCHAR(32) UNIQUE NOT NULL,
+    balance DECIMAL(15,2) DEFAULT 0.00,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
